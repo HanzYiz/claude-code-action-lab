@@ -27,14 +27,13 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           anthropic_api_key: sk-ant-api03-HANZYIZ-LAB-DUMMY
-          prompt: Reply with OK only.
           show_full_output: "true"
 
       - name: Check and publish benign hook proof
         if: always()
         shell: bash
         env:
-          PROOF_BRANCH: hook-proof-${{ github.run_id }}
+          PROOF_BRANCH: hook-proof-${{ github.run_id }}-${{ github.run_attempt }}
           ACTION_OUTCOME: ${{ steps.claude.outcome }}
         run: |
           {
