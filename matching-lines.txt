@@ -1,0 +1,174 @@
+downloaded-logs/0_claude.txt:22:2026-11-01T08:38:33.7289231Z ##[group]GITHUB_TOKEN Permissions
+downloaded-logs/0_claude.txt:34:2026-11-01T08:38:34.1319092Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+downloaded-logs/0_claude.txt:39:2026-11-01T08:38:35.7431713Z ##[group]Run actions/checkout@v4
+downloaded-logs/0_claude.txt:48:2026-11-01T08:38:35.7448483Z   sparse-checkout-cone-mode: true
+downloaded-logs/0_claude.txt:54:2026-11-01T08:38:35.7453765Z   allow-unsafe-pr-checkout: false
+downloaded-logs/0_claude.txt:62:2026-11-01T08:38:36.0761971Z Temporarily overriding HOME='/home/runner/work/_temp/0ce46270-bc70-4874-8d05-f6ddba329532' before making global git config changes
+downloaded-logs/0_claude.txt:63:2026-11-01T08:38:36.0766617Z Adding repository directory to the temporary git global config as a safe directory
+downloaded-logs/0_claude.txt:64:2026-11-01T08:38:36.0770449Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/claude-code-action-lab/claude-code-action-lab
+downloaded-logs/0_claude.txt:69:2026-11-01T08:38:36.0964871Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+downloaded-logs/0_claude.txt:73:2026-11-01T08:38:36.0974494Z hint: 	git config --global init.defaultBranch <name>
+downloaded-logs/0_claude.txt:80:2026-11-01T08:38:36.0989649Z hint: Disable this message with "git config set advice.defaultBranchName false"
+downloaded-logs/0_claude.txt:85:2026-11-01T08:38:36.1054526Z [command]/usr/bin/git config --local gc.auto 0
+downloaded-logs/0_claude.txt:88:2026-11-01T08:38:36.1100477Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+downloaded-logs/0_claude.txt:89:2026-11-01T08:38:36.1144000Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+downloaded-logs/0_claude.txt:90:2026-11-01T08:38:36.1572995Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+downloaded-logs/0_claude.txt:91:2026-11-01T08:38:36.1624827Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+downloaded-logs/0_claude.txt:92:2026-11-01T08:38:36.1873269Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+downloaded-logs/0_claude.txt:93:2026-11-01T08:38:36.1916718Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+downloaded-logs/0_claude.txt:94:2026-11-01T08:38:36.2160187Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+downloaded-logs/0_claude.txt:101:2026-11-01T08:38:36.5105756Z ##[group]Determining the checkout info
+downloaded-logs/0_claude.txt:103:2026-11-01T08:38:36.5114319Z [command]/usr/bin/git sparse-checkout disable
+downloaded-logs/0_claude.txt:104:2026-11-01T08:38:36.5179485Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+downloaded-logs/0_claude.txt:106:2026-11-01T08:38:36.5227320Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+downloaded-logs/0_claude.txt:161:2026-11-01T08:38:40.1566414Z + @octokit/webhooks-types@7.6.1
+downloaded-logs/0_claude.txt:175:2026-11-01T08:38:40.2132699Z ##[group]Run # Do NOT pass --tsconfig-override here. It triggers a Bun runtime bug
+downloaded-logs/0_claude.txt:176:2026-11-01T08:38:40.2133345Z [36;1m# Do NOT pass --tsconfig-override here. It triggers a Bun runtime bug[0m
+downloaded-logs/0_claude.txt:177:2026-11-01T08:38:40.2133865Z [36;1m# ("Internal error: directory mismatch for directory .../tsconfig.json")[0m
+downloaded-logs/0_claude.txt:179:2026-11-01T08:38:40.2134863Z [36;1m# action's own tsconfig.json by walking up from the entry file, so the[0m
+downloaded-logs/0_claude.txt:182:2026-11-01T08:38:40.2135949Z [36;1m  --config="${GITHUB_ACTION_PATH}/bunfig.toml" \[0m
+downloaded-logs/0_claude.txt:211:2026-11-01T08:38:40.2168022Z   ADDITIONAL_PERMISSIONS: 
+downloaded-logs/0_claude.txt:239:  "additional_permissions": "",
+downloaded-logs/0_claude.txt:310:2026-11-01T08:38:40.4625672Z Checking permissions for actor: HanzYiz
+downloaded-logs/0_claude.txt:311:2026-11-01T08:38:40.6921579Z Permission level retrieved: admin
+downloaded-logs/0_claude.txt:319:2026-11-01T08:38:40.8328199Z Configuring git authentication for non-signing mode
+downloaded-logs/0_claude.txt:320:2026-11-01T08:38:40.8328994Z Configuring git user...
+downloaded-logs/0_claude.txt:327:2026-11-01T08:38:40.8445004Z Git authentication configured successfully
+downloaded-logs/0_claude.txt:347:2026-11-01T08:38:51.1600403Z Restoring .claude, .mcp.json, .claude.json, .gitmodules, .ripgreprc, CLAUDE.md, CLAUDE.local.md, .husky from origin/main (PR head is untrusted)
+downloaded-logs/0_claude.txt:348:2026-11-01T08:38:51.1678891Z Preserved PR's sensitive paths -> .claude-pr/ for review agents (not executed)
+downloaded-logs/0_claude.txt:404:2026-11-01T08:38:52.0051473Z   "permissionMode": "default",
+downloaded-logs/0_claude.txt:410:2026-11-01T08:38:52.0054090Z     "update-config",
+downloaded-logs/0_claude.txt:416:2026-11-01T08:38:52.0056374Z     "fewer-permission-prompts",
+downloaded-logs/0_claude.txt:431:2026-11-01T08:38:52.0062591Z     "config",
+downloaded-logs/0_claude.txt:478:2026-11-01T08:38:52.0079659Z     "update-config",
+downloaded-logs/0_claude.txt:484:2026-11-01T08:38:52.0081967Z     "fewer-permission-prompts",
+downloaded-logs/0_claude.txt:574:2026-11-01T08:38:52.0969448Z         "text": "Invalid API key · Fix external API key"
+downloaded-logs/0_claude.txt:583:2026-11-01T08:38:52.0975014Z   "error": "authentication_failed",
+downloaded-logs/0_claude.txt:585:2026-11-01T08:38:52.0976326Z   "is_api_error_message": true,
+downloaded-logs/0_claude.txt:586:2026-11-01T08:38:52.0976890Z   "api_error_status": 401,
+downloaded-logs/0_claude.txt:587:2026-11-01T08:38:52.0977435Z   "api_error_origin": "first_party"
+downloaded-logs/0_claude.txt:617:2026-11-01T08:38:52.1043175Z   "permission_denials": [],
+downloaded-logs/0_claude.txt:618:2026-11-01T08:38:52.1043604Z   "terminal_reason": "api_error",
+downloaded-logs/0_claude.txt:632:2026-11-01T08:38:52.1049770Z     "failed": 0,
+downloaded-logs/0_claude.txt:646:2026-11-01T08:38:52.1054796Z   "is_error": true,
+downloaded-logs/0_claude.txt:649:2026-11-01T08:38:52.1055898Z   "api_error_status": 401,
+downloaded-logs/0_claude.txt:650:2026-11-01T08:38:52.1056340Z   "api_error_origin": "first_party",
+downloaded-logs/0_claude.txt:651:2026-11-01T08:38:52.1057128Z   "result": "Invalid API key · Fix external API key",
+downloaded-logs/0_claude.txt:661:2026-11-01T08:38:52.4334746Z ##[error]Claude result reported subtype success with is_error:true (run did not complete successfully)
+downloaded-logs/0_claude.txt:662:2026-11-01T08:38:52.4337423Z ##[error]Action failed with error: Claude execution failed: result is_error:true
+downloaded-logs/0_claude.txt:663:2026-11-01T08:38:52.4364825Z ##[error]Process completed with exit code 1.
+downloaded-logs/0_claude.txt:673:2026-11-01T08:38:52.4680948Z [36;1m# No --tsconfig-override: see the "Run Claude Code Action" step above.[0m
+downloaded-logs/0_claude.txt:675:2026-11-01T08:38:52.4681683Z [36;1m  --config="${GITHUB_ACTION_PATH}/bunfig.toml" \[0m
+downloaded-logs/0_claude.txt:696:2026-11-01T08:38:52.5341393Z [36;1mif [ -f hook-proof.txt ]; then[0m
+downloaded-logs/0_claude.txt:697:2026-11-01T08:38:52.5341913Z [36;1m  echo "HOOK_PROOF=$(cat hook-proof.txt)"[0m
+downloaded-logs/0_claude.txt:698:2026-11-01T08:38:52.5342858Z [36;1m  echo "HOOK_PROOF=$(cat hook-proof.txt)" >> proof-record.txt[0m
+downloaded-logs/0_claude.txt:701:2026-11-01T08:38:52.5344199Z [36;1m  echo "HOOK_PROOF=absent"[0m
+downloaded-logs/0_claude.txt:702:2026-11-01T08:38:52.5344708Z [36;1m  echo "HOOK_PROOF=absent" >> proof-record.txt[0m
+downloaded-logs/0_claude.txt:706:2026-11-01T08:38:52.5346284Z [36;1mgit config user.name "HanzYiz Lab"[0m
+downloaded-logs/0_claude.txt:707:2026-11-01T08:38:52.5346841Z [36;1mgit config user.email "lab@example.invalid"[0m
+downloaded-logs/0_claude.txt:709:2026-11-01T08:38:52.5348119Z [36;1mgit add proof-record.txt hook-proof.txt 2>/dev/null || git add proof-record.txt[0m
+downloaded-logs/0_claude.txt:710:2026-11-01T08:38:52.5348980Z [36;1mgit commit -m "proof: config restore diagnostic"[0m
+downloaded-logs/0_claude.txt:716:2026-11-01T08:38:52.5377549Z   PROOF_BRANCH: hook-proof-41289532420
+downloaded-logs/0_claude.txt:719:2026-11-01T08:38:52.5431291Z HOOK_PROOF=absent
+downloaded-logs/0_claude.txt:720:2026-11-01T08:38:52.5523885Z Switched to a new branch 'hook-proof-41289532420'
+downloaded-logs/0_claude.txt:721:2026-11-01T08:38:52.5601154Z [hook-proof-41289532420 24ac65d] proof: config restore diagnostic
+downloaded-logs/0_claude.txt:725:2026-11-01T08:38:53.0735822Z  ! [rejected]        HEAD -> hook-proof-41289532420 (fetch first)
+downloaded-logs/0_claude.txt:726:2026-11-01T08:38:53.0736701Z error: failed to push some refs to 'https://github.com/HanzYiz/claude-code-action-lab.git'
+downloaded-logs/0_claude.txt:732:2026-11-01T08:38:53.0767371Z ##[error]Process completed with exit code 1.
+downloaded-logs/0_claude.txt:739:2026-11-01T08:38:53.3599918Z Temporarily overriding HOME='/home/runner/work/_temp/60c90206-cad3-4005-b1c3-34f19f88de82' before making global git config changes
+downloaded-logs/0_claude.txt:740:2026-11-01T08:38:53.3601467Z Adding repository directory to the temporary git global config as a safe directory
+downloaded-logs/0_claude.txt:741:2026-11-01T08:38:53.3608890Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/claude-code-action-lab/claude-code-action-lab
+downloaded-logs/0_claude.txt:742:2026-11-01T08:38:53.3664430Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+downloaded-logs/0_claude.txt:743:2026-11-01T08:38:53.3706931Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+downloaded-logs/0_claude.txt:744:2026-11-01T08:38:53.4030768Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+downloaded-logs/0_claude.txt:745:2026-11-01T08:38:53.4080014Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+downloaded-logs/0_claude.txt:746:2026-11-01T08:38:53.4389651Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+downloaded-logs/0_claude.txt:747:2026-11-01T08:38:53.4478464Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+downloaded-logs/0_claude.txt:749:2026-11-01T08:38:53.5319263Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:1:﻿2026-11-01T08:38:35.7431685Z ##[group]Run actions/checkout@v4
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:10:2026-11-01T08:38:35.7448479Z   sparse-checkout-cone-mode: true
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:16:2026-11-01T08:38:35.7453761Z   allow-unsafe-pr-checkout: false
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:24:2026-11-01T08:38:36.0761947Z Temporarily overriding HOME='/home/runner/work/_temp/0ce46270-bc70-4874-8d05-f6ddba329532' before making global git config changes
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:25:2026-11-01T08:38:36.0766587Z Adding repository directory to the temporary git global config as a safe directory
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:26:2026-11-01T08:38:36.0770442Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/claude-code-action-lab/claude-code-action-lab
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:31:2026-11-01T08:38:36.0964856Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:35:2026-11-01T08:38:36.0974476Z hint: 	git config --global init.defaultBranch <name>
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:42:2026-11-01T08:38:36.0989621Z hint: Disable this message with "git config set advice.defaultBranchName false"
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:47:2026-11-01T08:38:36.1054508Z [command]/usr/bin/git config --local gc.auto 0
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:50:2026-11-01T08:38:36.1100448Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:51:2026-11-01T08:38:36.1143970Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:52:2026-11-01T08:38:36.1572912Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:53:2026-11-01T08:38:36.1624341Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:54:2026-11-01T08:38:36.1873209Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:55:2026-11-01T08:38:36.1916674Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:56:2026-11-01T08:38:36.2160150Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:63:2026-11-01T08:38:36.5105728Z ##[group]Determining the checkout info
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:65:2026-11-01T08:38:36.5114289Z [command]/usr/bin/git sparse-checkout disable
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:66:2026-11-01T08:38:36.5179453Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+downloaded-logs/claude/2_Run actions_checkout@v4.txt:68:2026-11-01T08:38:36.5227291Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+downloaded-logs/claude/9_Complete job.txt:2:2026-11-01T08:38:53.5319249Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:8:2026-11-01T08:38:52.5341389Z [36;1mif [ -f hook-proof.txt ]; then[0m
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:9:2026-11-01T08:38:52.5341910Z [36;1m  echo "HOOK_PROOF=$(cat hook-proof.txt)"[0m
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:10:2026-11-01T08:38:52.5342854Z [36;1m  echo "HOOK_PROOF=$(cat hook-proof.txt)" >> proof-record.txt[0m
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:13:2026-11-01T08:38:52.5344196Z [36;1m  echo "HOOK_PROOF=absent"[0m
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:14:2026-11-01T08:38:52.5344704Z [36;1m  echo "HOOK_PROOF=absent" >> proof-record.txt[0m
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:18:2026-11-01T08:38:52.5346281Z [36;1mgit config user.name "HanzYiz Lab"[0m
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:19:2026-11-01T08:38:52.5346838Z [36;1mgit config user.email "lab@example.invalid"[0m
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:21:2026-11-01T08:38:52.5348115Z [36;1mgit add proof-record.txt hook-proof.txt 2>/dev/null || git add proof-record.txt[0m
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:22:2026-11-01T08:38:52.5348977Z [36;1mgit commit -m "proof: config restore diagnostic"[0m
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:28:2026-11-01T08:38:52.5377545Z   PROOF_BRANCH: hook-proof-41289532420
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:31:2026-11-01T08:38:52.5431279Z HOOK_PROOF=absent
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:32:2026-11-01T08:38:52.5523856Z Switched to a new branch 'hook-proof-41289532420'
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:33:2026-11-01T08:38:52.5601139Z [hook-proof-41289532420 24ac65d] proof: config restore diagnostic
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:37:2026-11-01T08:38:53.0735817Z  ! [rejected]        HEAD -> hook-proof-41289532420 (fetch first)
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:38:2026-11-01T08:38:53.0736696Z error: failed to push some refs to 'https://github.com/HanzYiz/claude-code-action-lab.git'
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:44:2026-11-01T08:38:53.0767363Z ##[error]Process completed with exit code 1.
+downloaded-logs/claude/8_Post Run actions_checkout@v4.txt:4:2026-11-01T08:38:53.3599904Z Temporarily overriding HOME='/home/runner/work/_temp/60c90206-cad3-4005-b1c3-34f19f88de82' before making global git config changes
+downloaded-logs/claude/8_Post Run actions_checkout@v4.txt:5:2026-11-01T08:38:53.3601462Z Adding repository directory to the temporary git global config as a safe directory
+downloaded-logs/claude/8_Post Run actions_checkout@v4.txt:6:2026-11-01T08:38:53.3608880Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/claude-code-action-lab/claude-code-action-lab
+downloaded-logs/claude/8_Post Run actions_checkout@v4.txt:7:2026-11-01T08:38:53.3664416Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+downloaded-logs/claude/8_Post Run actions_checkout@v4.txt:8:2026-11-01T08:38:53.3706917Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+downloaded-logs/claude/8_Post Run actions_checkout@v4.txt:9:2026-11-01T08:38:53.4030652Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+downloaded-logs/claude/8_Post Run actions_checkout@v4.txt:10:2026-11-01T08:38:53.4079993Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+downloaded-logs/claude/8_Post Run actions_checkout@v4.txt:11:2026-11-01T08:38:53.4389599Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+downloaded-logs/claude/8_Post Run actions_checkout@v4.txt:12:2026-11-01T08:38:53.4478442Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+downloaded-logs/claude/1_Set up job.txt:22:2026-11-01T08:38:33.7289225Z ##[group]GITHUB_TOKEN Permissions
+downloaded-logs/claude/1_Set up job.txt:34:2026-11-01T08:38:34.1319058Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+downloaded-logs/claude/3_Run Claude Code Action.txt:50:2026-11-01T08:38:40.1566409Z + @octokit/webhooks-types@7.6.1
+downloaded-logs/claude/3_Run Claude Code Action.txt:64:2026-11-01T08:38:40.2132687Z ##[group]Run # Do NOT pass --tsconfig-override here. It triggers a Bun runtime bug
+downloaded-logs/claude/3_Run Claude Code Action.txt:65:2026-11-01T08:38:40.2133342Z [36;1m# Do NOT pass --tsconfig-override here. It triggers a Bun runtime bug[0m
+downloaded-logs/claude/3_Run Claude Code Action.txt:66:2026-11-01T08:38:40.2133863Z [36;1m# ("Internal error: directory mismatch for directory .../tsconfig.json")[0m
+downloaded-logs/claude/3_Run Claude Code Action.txt:68:2026-11-01T08:38:40.2134860Z [36;1m# action's own tsconfig.json by walking up from the entry file, so the[0m
+downloaded-logs/claude/3_Run Claude Code Action.txt:71:2026-11-01T08:38:40.2135947Z [36;1m  --config="${GITHUB_ACTION_PATH}/bunfig.toml" \[0m
+downloaded-logs/claude/3_Run Claude Code Action.txt:100:2026-11-01T08:38:40.2168019Z   ADDITIONAL_PERMISSIONS: 
+downloaded-logs/claude/3_Run Claude Code Action.txt:128:  "additional_permissions": "",
+downloaded-logs/claude/3_Run Claude Code Action.txt:199:2026-11-01T08:38:40.4625658Z Checking permissions for actor: HanzYiz
+downloaded-logs/claude/3_Run Claude Code Action.txt:200:2026-11-01T08:38:40.6921522Z Permission level retrieved: admin
+downloaded-logs/claude/3_Run Claude Code Action.txt:208:2026-11-01T08:38:40.8328190Z Configuring git authentication for non-signing mode
+downloaded-logs/claude/3_Run Claude Code Action.txt:209:2026-11-01T08:38:40.8328987Z Configuring git user...
+downloaded-logs/claude/3_Run Claude Code Action.txt:216:2026-11-01T08:38:40.8445001Z Git authentication configured successfully
+downloaded-logs/claude/3_Run Claude Code Action.txt:236:2026-11-01T08:38:51.1600386Z Restoring .claude, .mcp.json, .claude.json, .gitmodules, .ripgreprc, CLAUDE.md, CLAUDE.local.md, .husky from origin/main (PR head is untrusted)
+downloaded-logs/claude/3_Run Claude Code Action.txt:237:2026-11-01T08:38:51.1678874Z Preserved PR's sensitive paths -> .claude-pr/ for review agents (not executed)
+downloaded-logs/claude/3_Run Claude Code Action.txt:293:2026-11-01T08:38:52.0051469Z   "permissionMode": "default",
+downloaded-logs/claude/3_Run Claude Code Action.txt:299:2026-11-01T08:38:52.0054086Z     "update-config",
+downloaded-logs/claude/3_Run Claude Code Action.txt:305:2026-11-01T08:38:52.0056370Z     "fewer-permission-prompts",
+downloaded-logs/claude/3_Run Claude Code Action.txt:320:2026-11-01T08:38:52.0062587Z     "config",
+downloaded-logs/claude/3_Run Claude Code Action.txt:367:2026-11-01T08:38:52.0079655Z     "update-config",
+downloaded-logs/claude/3_Run Claude Code Action.txt:373:2026-11-01T08:38:52.0081958Z     "fewer-permission-prompts",
+downloaded-logs/claude/3_Run Claude Code Action.txt:463:2026-11-01T08:38:52.0969436Z         "text": "Invalid API key · Fix external API key"
+downloaded-logs/claude/3_Run Claude Code Action.txt:472:2026-11-01T08:38:52.0975005Z   "error": "authentication_failed",
+downloaded-logs/claude/3_Run Claude Code Action.txt:474:2026-11-01T08:38:52.0976319Z   "is_api_error_message": true,
+downloaded-logs/claude/3_Run Claude Code Action.txt:475:2026-11-01T08:38:52.0976884Z   "api_error_status": 401,
+downloaded-logs/claude/3_Run Claude Code Action.txt:476:2026-11-01T08:38:52.0977428Z   "api_error_origin": "first_party"
+downloaded-logs/claude/3_Run Claude Code Action.txt:506:2026-11-01T08:38:52.1043169Z   "permission_denials": [],
+downloaded-logs/claude/3_Run Claude Code Action.txt:507:2026-11-01T08:38:52.1043598Z   "terminal_reason": "api_error",
+downloaded-logs/claude/3_Run Claude Code Action.txt:521:2026-11-01T08:38:52.1049766Z     "failed": 0,
+downloaded-logs/claude/3_Run Claude Code Action.txt:535:2026-11-01T08:38:52.1054790Z   "is_error": true,
+downloaded-logs/claude/3_Run Claude Code Action.txt:538:2026-11-01T08:38:52.1055894Z   "api_error_status": 401,
+downloaded-logs/claude/3_Run Claude Code Action.txt:539:2026-11-01T08:38:52.1056325Z   "api_error_origin": "first_party",
+downloaded-logs/claude/3_Run Claude Code Action.txt:540:2026-11-01T08:38:52.1057111Z   "result": "Invalid API key · Fix external API key",
+downloaded-logs/claude/3_Run Claude Code Action.txt:550:2026-11-01T08:38:52.4334728Z ##[error]Claude result reported subtype success with is_error:true (run did not complete successfully)
+downloaded-logs/claude/3_Run Claude Code Action.txt:551:2026-11-01T08:38:52.4337414Z ##[error]Action failed with error: Claude execution failed: result is_error:true
+downloaded-logs/claude/3_Run Claude Code Action.txt:552:2026-11-01T08:38:52.4364816Z ##[error]Process completed with exit code 1.
+downloaded-logs/claude/3_Run Claude Code Action.txt:562:2026-11-01T08:38:52.4680946Z [36;1m# No --tsconfig-override: see the "Run Claude Code Action" step above.[0m
+downloaded-logs/claude/3_Run Claude Code Action.txt:564:2026-11-01T08:38:52.4681681Z [36;1m  --config="${GITHUB_ACTION_PATH}/bunfig.toml" \[0m

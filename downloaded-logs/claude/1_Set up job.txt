@@ -1,0 +1,38 @@
+﻿2026-11-01T08:38:33.7244470Z Current runner version: '2.338.2'
+2026-11-01T08:38:33.7270630Z ##[group]Runner Image Provisioner
+2026-11-01T08:38:33.7271599Z Hosted Compute Agent
+2026-11-01T08:38:33.7272635Z Version: 20261021.618
+2026-11-01T08:38:33.7273685Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-11-01T08:38:33.7274545Z Build Date: 2026-10-21T00:45:21Z
+2026-11-01T08:38:33.7275244Z Worker ID: {3fcac214-a0ab-4914-a2fe-30327f1828ec}
+2026-11-01T08:38:33.7276006Z Region: centralus
+2026-11-01T08:38:33.7276637Z Cloud: Azure
+2026-11-01T08:38:33.7277220Z ##[endgroup]
+2026-11-01T08:38:33.7279133Z ##[group]Operating System
+2026-11-01T08:38:33.7279810Z Ubuntu
+2026-11-01T08:38:33.7280407Z 24.04.5
+2026-11-01T08:38:33.7281000Z LTS
+2026-11-01T08:38:33.7281533Z ##[endgroup]
+2026-11-01T08:38:33.7282151Z ##[group]Runner Image
+2026-11-01T08:38:33.7283094Z Image: ubuntu-24.04
+2026-11-01T08:38:33.7283674Z Version: 20261025.353.1
+2026-11-01T08:38:33.7284886Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-01T08:38:33.7286715Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+2026-11-01T08:38:33.7287708Z ##[endgroup]
+2026-11-01T08:38:33.7289225Z ##[group]GITHUB_TOKEN Permissions
+2026-11-01T08:38:33.7291157Z Actions: read
+2026-11-01T08:38:33.7291910Z Contents: write
+2026-11-01T08:38:33.7292928Z Issues: write
+2026-11-01T08:38:33.7293543Z Metadata: read
+2026-11-01T08:38:33.7294228Z PullRequests: write
+2026-11-01T08:38:33.7294826Z ##[endgroup]
+2026-11-01T08:38:33.7297005Z Secret source: Actions
+2026-11-01T08:38:33.7298193Z Cache mode: read
+2026-11-01T08:38:33.7298883Z Prepare workflow directory
+2026-11-01T08:38:33.8822181Z Prepare all required actions
+2026-11-01T08:38:33.8891307Z Getting action download info
+2026-11-01T08:38:34.1319058Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-01T08:38:34.2351898Z Download action repository 'anthropics/claude-code-action@v1' (SHA:d535f5172dec02b204866b393d6b20b9b2aaf98d)
+2026-11-01T08:38:34.7320221Z Getting action download info
+2026-11-01T08:38:34.8486369Z Download action repository 'oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+2026-11-01T08:38:35.4570465Z Complete job name: claude

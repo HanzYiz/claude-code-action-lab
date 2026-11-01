@@ -1,0 +1,44 @@
+﻿2026-11-01T08:38:52.5338383Z ##[group]Run {
+2026-11-01T08:38:52.5338789Z [36;1m{[0m
+2026-11-01T08:38:52.5339142Z [36;1m  echo "EVENT=$GITHUB_EVENT_NAME"[0m
+2026-11-01T08:38:52.5339648Z [36;1m  echo "ACTOR=$GITHUB_ACTOR"[0m
+2026-11-01T08:38:52.5340148Z [36;1m  echo "ACTION_OUTCOME=$ACTION_OUTCOME"[0m
+2026-11-01T08:38:52.5340659Z [36;1m} > proof-record.txt[0m
+2026-11-01T08:38:52.5341050Z [36;1m[0m
+2026-11-01T08:38:52.5341389Z [36;1mif [ -f hook-proof.txt ]; then[0m
+2026-11-01T08:38:52.5341910Z [36;1m  echo "HOOK_PROOF=$(cat hook-proof.txt)"[0m
+2026-11-01T08:38:52.5342854Z [36;1m  echo "HOOK_PROOF=$(cat hook-proof.txt)" >> proof-record.txt[0m
+2026-11-01T08:38:52.5343474Z [36;1m  marker_present=1[0m
+2026-11-01T08:38:52.5343860Z [36;1melse[0m
+2026-11-01T08:38:52.5344196Z [36;1m  echo "HOOK_PROOF=absent"[0m
+2026-11-01T08:38:52.5344704Z [36;1m  echo "HOOK_PROOF=absent" >> proof-record.txt[0m
+2026-11-01T08:38:52.5345232Z [36;1m  marker_present=0[0m
+2026-11-01T08:38:52.5345603Z [36;1mfi[0m
+2026-11-01T08:38:52.5345942Z [36;1m[0m
+2026-11-01T08:38:52.5346281Z [36;1mgit config user.name "HanzYiz Lab"[0m
+2026-11-01T08:38:52.5346838Z [36;1mgit config user.email "lab@example.invalid"[0m
+2026-11-01T08:38:52.5347379Z [36;1mgit switch -C "$PROOF_BRANCH"[0m
+2026-11-01T08:38:52.5348115Z [36;1mgit add proof-record.txt hook-proof.txt 2>/dev/null || git add proof-record.txt[0m
+2026-11-01T08:38:52.5348977Z [36;1mgit commit -m "proof: config restore diagnostic"[0m
+2026-11-01T08:38:52.5349621Z [36;1mgit push origin "HEAD:refs/heads/$PROOF_BRANCH"[0m
+2026-11-01T08:38:52.5350136Z [36;1m[0m
+2026-11-01T08:38:52.5350461Z [36;1mtest "$marker_present" = 1[0m
+2026-11-01T08:38:52.5376647Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-01T08:38:52.5377208Z env:
+2026-11-01T08:38:52.5377545Z   PROOF_BRANCH: hook-proof-41289532420
+2026-11-01T08:38:52.5378004Z   ACTION_OUTCOME: failure
+2026-11-01T08:38:52.5378368Z ##[endgroup]
+2026-11-01T08:38:52.5431279Z HOOK_PROOF=absent
+2026-11-01T08:38:52.5523856Z Switched to a new branch 'hook-proof-41289532420'
+2026-11-01T08:38:52.5601139Z [hook-proof-41289532420 24ac65d] proof: config restore diagnostic
+2026-11-01T08:38:52.5601934Z  1 file changed, 4 insertions(+)
+2026-11-01T08:38:52.5602774Z  create mode 100644 proof-record.txt
+2026-11-01T08:38:53.0734979Z To https://github.com/HanzYiz/claude-code-action-lab.git
+2026-11-01T08:38:53.0735817Z  ! [rejected]        HEAD -> hook-proof-41289532420 (fetch first)
+2026-11-01T08:38:53.0736696Z error: failed to push some refs to 'https://github.com/HanzYiz/claude-code-action-lab.git'
+2026-11-01T08:38:53.0750350Z hint: Updates were rejected because the remote contains work that you do not
+2026-11-01T08:38:53.0751246Z hint: have locally. This is usually caused by another repository pushing to
+2026-11-01T08:38:53.0752023Z hint: the same ref. If you want to integrate the remote changes, use
+2026-11-01T08:38:53.0752950Z hint: 'git pull' before pushing again.
+2026-11-01T08:38:53.0753617Z hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-11-01T08:38:53.0767363Z ##[error]Process completed with exit code 1.
