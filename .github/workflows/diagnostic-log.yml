@@ -22,8 +22,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          run_id="${GITHUB_REF_NAME#diag-run-}"
-          diagnostic_branch="diagnostic-log-$run_id"
+          run_id=$(printf '%s\n' "$GITHUB_REF_NAME" |
+            sed -E 's/^diag-run-([0-9]+).*/\1/')
+          diagnostic_branch="diagnostic-logs-$run_id-$GITHUB_RUN_ID"
 
           curl -fsSL \
             -H "Authorization: Bearer $GH_TOKEN" \
@@ -45,7 +46,7 @@ jobs:
             mkdir -p downloaded-logs
             unzip -q logs.zip -d downloaded-logs
             grep -RniE \
-              'Action failed|error|denied|permission|not found|could not|failed|invalid' \
+              'Action failed|error|denied|permission|not found|could not|failed|invalid|pinning|checkout|restore|Restoring|Preserved|SessionStart|hook|config' \
               downloaded-logs > matching-lines.txt || true
           else
             echo "Could not download logs; response is in logs.zip" >> diagnostic-summary.txt
@@ -55,6 +56,6 @@ jobs:
           git config user.name "HanzYiz Lab"
           git config user.email "lab@example.invalid"
           git switch -C "$diagnostic_branch"
-          git add run.json diagnostic-summary.txt matching-lines.txt
-          git commit -m "diagnostic: publish run $run_id log summary"
+          git add run.json diagnostic-summary.txt matching-lines.txt downloaded-logs
+          git commit -m "diagnostic: publish full run $run_id logs"
           git push origin "HEAD:refs/heads/$diagnostic_branch"
