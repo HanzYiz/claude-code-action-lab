@@ -1,0 +1,4 @@
+EVENT=issue_comment
+ACTOR=HanzYiz
+ACTION_OUTCOME=failure
+HOOK_PROOF=absent
