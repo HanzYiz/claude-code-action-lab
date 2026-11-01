@@ -1,0 +1,54 @@
+downloaded-logs/0_claude.txt:22:2026-11-01T08:38:33.7289231Z ##[group]GITHUB_TOKEN Permissions
+downloaded-logs/0_claude.txt:177:2026-11-01T08:38:40.2133865Z [36;1m# ("Internal error: directory mismatch for directory .../tsconfig.json")[0m
+downloaded-logs/0_claude.txt:211:2026-11-01T08:38:40.2168022Z   ADDITIONAL_PERMISSIONS: 
+downloaded-logs/0_claude.txt:239:  "additional_permissions": "",
+downloaded-logs/0_claude.txt:310:2026-11-01T08:38:40.4625672Z Checking permissions for actor: HanzYiz
+downloaded-logs/0_claude.txt:311:2026-11-01T08:38:40.6921579Z Permission level retrieved: admin
+downloaded-logs/0_claude.txt:404:2026-11-01T08:38:52.0051473Z   "permissionMode": "default",
+downloaded-logs/0_claude.txt:416:2026-11-01T08:38:52.0056374Z     "fewer-permission-prompts",
+downloaded-logs/0_claude.txt:484:2026-11-01T08:38:52.0081967Z     "fewer-permission-prompts",
+downloaded-logs/0_claude.txt:574:2026-11-01T08:38:52.0969448Z         "text": "Invalid API key · Fix external API key"
+downloaded-logs/0_claude.txt:583:2026-11-01T08:38:52.0975014Z   "error": "authentication_failed",
+downloaded-logs/0_claude.txt:585:2026-11-01T08:38:52.0976326Z   "is_api_error_message": true,
+downloaded-logs/0_claude.txt:586:2026-11-01T08:38:52.0976890Z   "api_error_status": 401,
+downloaded-logs/0_claude.txt:587:2026-11-01T08:38:52.0977435Z   "api_error_origin": "first_party"
+downloaded-logs/0_claude.txt:617:2026-11-01T08:38:52.1043175Z   "permission_denials": [],
+downloaded-logs/0_claude.txt:618:2026-11-01T08:38:52.1043604Z   "terminal_reason": "api_error",
+downloaded-logs/0_claude.txt:632:2026-11-01T08:38:52.1049770Z     "failed": 0,
+downloaded-logs/0_claude.txt:646:2026-11-01T08:38:52.1054796Z   "is_error": true,
+downloaded-logs/0_claude.txt:649:2026-11-01T08:38:52.1055898Z   "api_error_status": 401,
+downloaded-logs/0_claude.txt:650:2026-11-01T08:38:52.1056340Z   "api_error_origin": "first_party",
+downloaded-logs/0_claude.txt:651:2026-11-01T08:38:52.1057128Z   "result": "Invalid API key · Fix external API key",
+downloaded-logs/0_claude.txt:661:2026-11-01T08:38:52.4334746Z ##[error]Claude result reported subtype success with is_error:true (run did not complete successfully)
+downloaded-logs/0_claude.txt:662:2026-11-01T08:38:52.4337423Z ##[error]Action failed with error: Claude execution failed: result is_error:true
+downloaded-logs/0_claude.txt:663:2026-11-01T08:38:52.4364825Z ##[error]Process completed with exit code 1.
+downloaded-logs/0_claude.txt:707:2026-11-01T08:38:52.5346841Z [36;1mgit config user.email "lab@example.invalid"[0m
+downloaded-logs/0_claude.txt:726:2026-11-01T08:38:53.0736701Z error: failed to push some refs to 'https://github.com/HanzYiz/claude-code-action-lab.git'
+downloaded-logs/0_claude.txt:732:2026-11-01T08:38:53.0767371Z ##[error]Process completed with exit code 1.
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:19:2026-11-01T08:38:52.5346838Z [36;1mgit config user.email "lab@example.invalid"[0m
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:38:2026-11-01T08:38:53.0736696Z error: failed to push some refs to 'https://github.com/HanzYiz/claude-code-action-lab.git'
+downloaded-logs/claude/4_Check and publish benign hook proof.txt:44:2026-11-01T08:38:53.0767363Z ##[error]Process completed with exit code 1.
+downloaded-logs/claude/1_Set up job.txt:22:2026-11-01T08:38:33.7289225Z ##[group]GITHUB_TOKEN Permissions
+downloaded-logs/claude/3_Run Claude Code Action.txt:66:2026-11-01T08:38:40.2133863Z [36;1m# ("Internal error: directory mismatch for directory .../tsconfig.json")[0m
+downloaded-logs/claude/3_Run Claude Code Action.txt:100:2026-11-01T08:38:40.2168019Z   ADDITIONAL_PERMISSIONS: 
+downloaded-logs/claude/3_Run Claude Code Action.txt:128:  "additional_permissions": "",
+downloaded-logs/claude/3_Run Claude Code Action.txt:199:2026-11-01T08:38:40.4625658Z Checking permissions for actor: HanzYiz
+downloaded-logs/claude/3_Run Claude Code Action.txt:200:2026-11-01T08:38:40.6921522Z Permission level retrieved: admin
+downloaded-logs/claude/3_Run Claude Code Action.txt:293:2026-11-01T08:38:52.0051469Z   "permissionMode": "default",
+downloaded-logs/claude/3_Run Claude Code Action.txt:305:2026-11-01T08:38:52.0056370Z     "fewer-permission-prompts",
+downloaded-logs/claude/3_Run Claude Code Action.txt:373:2026-11-01T08:38:52.0081958Z     "fewer-permission-prompts",
+downloaded-logs/claude/3_Run Claude Code Action.txt:463:2026-11-01T08:38:52.0969436Z         "text": "Invalid API key · Fix external API key"
+downloaded-logs/claude/3_Run Claude Code Action.txt:472:2026-11-01T08:38:52.0975005Z   "error": "authentication_failed",
+downloaded-logs/claude/3_Run Claude Code Action.txt:474:2026-11-01T08:38:52.0976319Z   "is_api_error_message": true,
+downloaded-logs/claude/3_Run Claude Code Action.txt:475:2026-11-01T08:38:52.0976884Z   "api_error_status": 401,
+downloaded-logs/claude/3_Run Claude Code Action.txt:476:2026-11-01T08:38:52.0977428Z   "api_error_origin": "first_party"
+downloaded-logs/claude/3_Run Claude Code Action.txt:506:2026-11-01T08:38:52.1043169Z   "permission_denials": [],
+downloaded-logs/claude/3_Run Claude Code Action.txt:507:2026-11-01T08:38:52.1043598Z   "terminal_reason": "api_error",
+downloaded-logs/claude/3_Run Claude Code Action.txt:521:2026-11-01T08:38:52.1049766Z     "failed": 0,
+downloaded-logs/claude/3_Run Claude Code Action.txt:535:2026-11-01T08:38:52.1054790Z   "is_error": true,
+downloaded-logs/claude/3_Run Claude Code Action.txt:538:2026-11-01T08:38:52.1055894Z   "api_error_status": 401,
+downloaded-logs/claude/3_Run Claude Code Action.txt:539:2026-11-01T08:38:52.1056325Z   "api_error_origin": "first_party",
+downloaded-logs/claude/3_Run Claude Code Action.txt:540:2026-11-01T08:38:52.1057111Z   "result": "Invalid API key · Fix external API key",
+downloaded-logs/claude/3_Run Claude Code Action.txt:550:2026-11-01T08:38:52.4334728Z ##[error]Claude result reported subtype success with is_error:true (run did not complete successfully)
+downloaded-logs/claude/3_Run Claude Code Action.txt:551:2026-11-01T08:38:52.4337414Z ##[error]Action failed with error: Claude execution failed: result is_error:true
+downloaded-logs/claude/3_Run Claude Code Action.txt:552:2026-11-01T08:38:52.4364816Z ##[error]Process completed with exit code 1.
