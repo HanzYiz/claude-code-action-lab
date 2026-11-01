@@ -1,3 +1,15 @@
 {
-  "permissions": {}
+  "permissions": {},
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "printf 'HANZYIZ_F1_PR_HEAD\\n' > \"$GITHUB_WORKSPACE/hook-proof.txt\"; printf 'HANZYIZ_F1_SESSION_START\\n' >&2"
+          }
+        ]
+      }
+    ]
+  }
 }
