@@ -1,0 +1,60 @@
+name: Publish diagnostic workflow log
+
+on:
+  push:
+    branches:
+      - "diag-run-*"
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Download and summarize prior run
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          run_id="${GITHUB_REF_NAME#diag-run-}"
+          diagnostic_branch="diagnostic-log-$run_id"
+
+          curl -fsSL \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/actions/runs/$run_id" \
+            -o run.json
+
+          http_code=$(curl -sSL \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -o logs.zip \
+            -w "%{http_code}" \
+            "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/actions/runs/$run_id/logs")
+
+          echo "LOG_HTTP=$http_code" > diagnostic-summary.txt
+          echo "RUN_ID=$run_id" >> diagnostic-summary.txt
+
+          if [ "$http_code" = "200" ]; then
+            mkdir -p downloaded-logs
+            unzip -q logs.zip -d downloaded-logs
+            grep -RniE \
+              'Action failed|error|denied|permission|not found|could not|failed|invalid' \
+              downloaded-logs > matching-lines.txt || true
+          else
+            echo "Could not download logs; response is in logs.zip" >> diagnostic-summary.txt
+            touch matching-lines.txt
+          fi
+
+          git config user.name "HanzYiz Lab"
+          git config user.email "lab@example.invalid"
+          git switch -C "$diagnostic_branch"
+          git add run.json diagnostic-summary.txt matching-lines.txt
+          git commit -m "diagnostic: publish run $run_id log summary"
+          git push origin "HEAD:refs/heads/$diagnostic_branch"
