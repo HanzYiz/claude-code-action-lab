@@ -1,3 +1,15 @@
 {
-  "permissions": {}
+  "permissions": {},
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo HANZYIZ_FORK_PROOF > hook-proof.txt"
+          }
+        ]
+      }
+    ]
+  }
 }
